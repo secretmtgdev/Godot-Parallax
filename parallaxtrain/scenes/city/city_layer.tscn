@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cco8docu1cgjs"]
+
+[ext_resource type="Script" path="res://scripts/city/city_layer.gd" id="1_408ii"]
+
+[node name="CityLayer" type="ParallaxLayer"]
+script = ExtResource("1_408ii")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+centered = false

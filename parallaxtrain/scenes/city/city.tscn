@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://4liaxwrfto7f"]
+
+[ext_resource type="PackedScene" uid="uid://den10bvnd6uw" path="res://scenes/city/scrolling_bg.tscn" id="1_tq3yq"]
+[ext_resource type="AudioStream" uid="uid://dhlhkilmyjux0" path="res://assets/audio/library.mp3" id="2_gl1os"]
+
+[node name="City" type="Node2D"]
+position = Vector2(0, -2)
+
+[node name="ScrollingBg" parent="." instance=ExtResource("1_tq3yq")]
+follow_viewport_enabled = true
+
+[node name="Train" type="Sprite2D" parent="."]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_gl1os")
+volume_db = -22.0
+autoplay = true

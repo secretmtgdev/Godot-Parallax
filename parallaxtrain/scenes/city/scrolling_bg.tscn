@@ -1,0 +1,36 @@
+[gd_scene load_steps=9 format=3 uid="uid://den10bvnd6uw"]
+
+[ext_resource type="Script" path="res://scenes/city/scrolling_bg.gd" id="1_4uriy"]
+[ext_resource type="PackedScene" uid="uid://cco8docu1cgjs" path="res://scenes/city/city_layer.tscn" id="1_y0d82"]
+[ext_resource type="Texture2D" uid="uid://sx5dyxpg3yyq" path="res://assets/images/city/pink_background/1.png" id="2_t7670"]
+[ext_resource type="Texture2D" uid="uid://cv4qw4hmg10es" path="res://assets/images/city/pink_background/2.png" id="3_7rmkp"]
+[ext_resource type="Texture2D" uid="uid://ckb24ryshrgsu" path="res://assets/images/city/pink_background/3.png" id="4_g6s3g"]
+[ext_resource type="Texture2D" uid="uid://ecsr7pow8djj" path="res://assets/images/city/pink_background/4.png" id="5_scauv"]
+[ext_resource type="Texture2D" uid="uid://v1xxb7si2rai" path="res://assets/images/city/pink_background/5.png" id="6_ymeca"]
+[ext_resource type="Texture2D" uid="uid://conras2kiurrr" path="res://assets/images/city/pink_background/6.png" id="7_8tc54"]
+
+[node name="ScrollingBg" type="ParallaxBackground"]
+script = ExtResource("1_4uriy")
+
+[node name="Sky" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("2_t7670")
+
+[node name="Buildings1" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("3_7rmkp")
+scroll_scale = 0.15
+
+[node name="Buildings2" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("4_g6s3g")
+scroll_scale = 0.3
+
+[node name="Buildings3" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("5_scauv")
+scroll_scale = 0.45
+
+[node name="Buildings4" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("6_ymeca")
+scroll_scale = 0.6
+
+[node name="Buildings5" parent="." instance=ExtResource("1_y0d82")]
+texture = ExtResource("7_8tc54")
+scroll_scale = 0.75
